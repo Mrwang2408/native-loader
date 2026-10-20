@@ -7,4 +7,10 @@ edition = "2021"
 crate-type = ["cdylib"]
 
 [dependencies]
+libc = "0.2"
 ctor = "0.2"
+log = "0.4"
+android_logger = { version = "0.15.0", default-features = false }
+jni = "0.21.1"
+jni-simple = { version = "0.4", default-features = false, features = ["std"] }
+ndk-context = "0.1"
